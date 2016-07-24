@@ -18,3 +18,10 @@ end
   result = g.invoke_step!(cmd)
 end
 ```
+
+There are few components in this to understand:
+
+- `Ghostwriter#define_step(regex, &block)` to define a step
+- `Ghostwriter#expectation(&blk)` to use the `expect` method inside a step.
+- `Ghostwriter#expectation_result(test_case_name, result_boolean, actual_result)` is what a step should return
+- `Ghostwriter#invoke_step!(string_command)` will find matching steps for the string, run them, and print the output
