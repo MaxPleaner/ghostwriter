@@ -1,3 +1,9 @@
+The source for a `Ghostwriter` module is in [ghostwriter.rb](./ghostwriter.rb).
+
+Some example usage code can be seen in [test.rb](./test.rb), and is pasted below for convenience:
+
+
+```ruby
 require_relative("./ghostwriter.rb")
 
 # initialize, define_step, invoke_step
@@ -12,3 +18,4 @@ end
   cmd = "test args is a single string with input: #{input}"
   result = g.invoke_step!(cmd)
 end
+```
