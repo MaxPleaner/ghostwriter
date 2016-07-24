@@ -26,5 +26,4 @@ There are few components in this to understand:
 - `Ghostwriter#expectation_result(test_case_name, result_boolean, actual_result)` is what a step should return
 - `Ghostwriter#invoke_step!(string_command)` will find matching steps for the string, run them, and print the output
 
-
-
+The `test.rb`. can be run with `ruby`. There is no special shell command that needs to be run. 
