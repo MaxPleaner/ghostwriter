@@ -1,6 +1,5 @@
 require_relative("./ghostwriter.rb")
 
-# initialize, define_step, invoke_step
 g = Ghostwriter.new
 
 g.define_step(/test args is a single string with input: (.*)/) do |args|
