@@ -4,7 +4,7 @@ Some example usage code can be seen in [test.rb](./test.rb), and is pasted below
 
 
 ```ruby
-require_relative("./ghostwriter.rb")
+require_relative("./ghostwriter.rb") # loads 'cucumber', 'rspec', and 'colored' gems
 
 g = Ghostwriter.new
 
@@ -25,3 +25,6 @@ There are few components in this to understand:
 - `Ghostwriter#expectation(&blk)` to use the `expect` method inside a step.
 - `Ghostwriter#expectation_result(test_case_name, result_boolean, actual_result)` is what a step should return
 - `Ghostwriter#invoke_step!(string_command)` will find matching steps for the string, run them, and print the output
+
+
+
