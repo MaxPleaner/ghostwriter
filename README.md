@@ -57,3 +57,5 @@ html parsing gem). As early as 1728,
 the term "hack writer" was used to describe this behavior and the word "hack" as an insult. The origins of the insult "hack" are the [Hackney 
 breed of horse](https://en.wikipedia.org/wiki/Hackney_horse), which were well-suited to transporting carriages. Maybe the pun should stop 
 here, but one could say that carriage-transportation saved time in the olden days just like test automation does today. 
+
+![Hackney Horse Image](./hackney_horse.jpg)
