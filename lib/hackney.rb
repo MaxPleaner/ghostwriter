@@ -13,7 +13,8 @@ class Hackney
     "CALL RSPEC FROM A STEP: expectation(blk)",
     "RETURN FROM STEP: expectation_result(name, result_bool, actual_result)"
   ]
-  # start out by initializing Ghostwriter
+
+  # start out by initializing Hackney
   def initialize
     runtime = Cucumber::Runtime.new
     config = Cucumber::Configuration.new
@@ -60,7 +61,7 @@ class Hackney
 
   # expose the rspec 'expect' method
   # creates and runs an anonymous rspec expectation
-  # Usage example: Ghostwriter.new.expectation { expect(1).to eq(2) } 
+  # Usage example: Hackney.new.expectation { expect(1).to eq(2) } 
                    # => returns false because 1 != 2
   def expectation(&blk)
     RSpec.describe("") { it("") { instance_exec(&blk) } }.run
