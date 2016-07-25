@@ -46,7 +46,8 @@ There are few instance methods on `Hackney` that this uses:
 - `#expectation(&blk)` to use rspec's `expect` method inside a step.
 - `#expectation_result([test_case_name, result_boolean, actual_result])` is what a step should return. Any number of length-3 arrays can be 
 provided as subsequent arguments if a step contains multiple expectations.
-- `#invoke_step!(string_command)` will find matching steps for the string, run them, and print the output
+- `#invoke_step!(string_command)` will find matching steps for the string, run them, and print the output. Note that `invoke_step` without 
+the exclamation point does the same thing without printing any output. 
 
 The `test.rb`. can be run with `ruby`. There is no special shell command that needs to be run. 
 
