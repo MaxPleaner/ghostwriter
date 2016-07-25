@@ -49,3 +49,11 @@ provided as subsequent arguments if a step contains multiple expectations.
 - `#invoke_step!(string_command)` will find matching steps for the string, run them, and print the output
 
 The `test.rb`. can be run with `ruby`. There is no special shell command that needs to be run. 
+
+### Why is it called Hackney
+
+I like esoteric software names. TDD is kind of like ghostwriting a script. The gem name `ghostwriter` was already taken (it's a pretty cool 
+html parsing gem). As early as 1728, 
+the term "hack writer" was used to describe this behavior and the word "hack" as an insult. The origins of the insult "hack" are the [Hackney 
+breed of horse](https://en.wikipedia.org/wiki/Hackney_horse), which were well-suited to transporting carriages. Maybe the pun should stop 
+here, but one could say that carriage-transportation saved time in the olden days just like test automation does today. 
