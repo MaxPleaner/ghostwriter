@@ -26,7 +26,6 @@ Some example usage code can be seen in [test.rb](./test.rb), and is pasted below
 
 ```ruby
 require_relative("./lib/hackney.rb")
-# if the 'hackey' gem is installed, require('hackney') should be used instead
 
 runner = Hackney.new
 
@@ -35,10 +34,10 @@ runner.define_step(/When input is (.*), test that the argument passed to the blo
   runner.expectation_result([:args_class_ok, args_class_ok, args.class])
 end
 
-["", "foo", "foo bar"].each do |input|
-  cmd = "When input is #{input}, test that the argument passed to the block is a string"
-  result = runner.invoke_step!(cmd)
-end
+runner.invoke_step! "When input is , test that the argument passed to the block is a string"
+runner.invoke_step! "When input is foo, test that the argument passed to the block is a string"
+runner.invoke_step! "When input is foobar, test that the argument passed to the block is a string"
+
 ```
 
 There are few instance methods on `Hackney` that this uses:
