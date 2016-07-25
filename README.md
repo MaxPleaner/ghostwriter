@@ -19,7 +19,7 @@ cucumber's existing API, but I have written my own components for this gem:
 
 The source for a `Hackney` module is in [hackney.rb](./lib/hackney.rb).
 
-It's been packaged up into a gem, so just `gem install hackney` or put `gem 'hackney'` in a Gemfile.
+It's been packaged up into a gem and pushed to RubyGems, so just `gem install hackney` or put `gem 'hackney'` in a Gemfile.
 
 Some example usage code can be seen in [test.rb](./test.rb), and is pasted below for convenience:
 
