@@ -29,8 +29,9 @@ class Hackney
   attr_reader :dsl, :steps
 
   # dynamically define a step using a regex and a block
-  # the block will receive one argument, an array containing the results of the regex's match groups
-  # for example, /foo (.+)/, if called like "foo bar asd", will pass ["bar asd"] to the block. 
+  # the block will receive n arguments which corresponds to the number of match groups in the regex
+  # for example, /foo (.+)/, if called like "foo bar asd", will pass "bar asd" to the block as a single argument
+  # and /foo (.+)-(.+)/, if called like foo bar-asd, will pass "bar" and "asd" to the block as sequential arguments
   def define_step(regex, &blk)
     steps[regex] = dsl.register_rb_step_definition(regex, blk)
   end
