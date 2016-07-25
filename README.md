@@ -7,7 +7,7 @@ The problem is that cucumber doesn't make it easy to run tests without using the
 I wanted to define and run steps dynamically from any ruby script. To get this to work, I looked into the
 [cucumber-ruby rubydoc](http://www.rubydoc.info/github/cucumber/cucumber-ruby/) and tried to use the existing API
 as much as possible. I still ended up building some custom components. I think the following could potentially be refactored to use
-cucumber's existing API, but I have written my own component for this gem:
+cucumber's existing API, but I have written my own components for this gem:
 
 - create steps on-the-fly
 - invoke steps by running a string through a regex matcher
