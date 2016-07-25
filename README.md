@@ -40,6 +40,19 @@ runner.invoke_step! "When input is foobar, test that the argument passed to the 
 
 ```
 
+This produces the following console output (with a little red/green coloring):
+
+```txt
+When input is , test that the argument passed to the block is a string
+args_class_ok ? true
+
+When input is foo, test that the argument passed to the block is a string
+args_class_ok ? true
+
+When input is foobar, test that the argument passed to the block is a string
+args_class_ok ? true
+txt
+
 There are few instance methods on `Hackney` that this uses:
 
 - `#define_step(regex, &block)` to define a step
