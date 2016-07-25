@@ -50,7 +50,7 @@ class Hackney
     matching_regex = matches[0]
     regex_results = matching_regex.match(string).to_a
     full_match_string, arguments = regex_results.shift, regex_results
-    steps[matching_regex].invoke(arguments)
+    steps[matching_regex].invoke(*arguments) # pass the match group hits as sequential arguments
   end
 
   def expectation_result(*result_sets)
