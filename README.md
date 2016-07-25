@@ -12,7 +12,8 @@ cucumber's existing API, but I have written my own components for this gem:
 - create steps on-the-fly
 - invoke steps by running a string through a regex matcher
 - use rspec in the steps
-- use existing cli formatter
+- pretty print output
+
 
 
 ### How to use
