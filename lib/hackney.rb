@@ -5,8 +5,14 @@ require 'colored'
 class AmbiguousStepError < StandardError; end
 class NoMatchingStepError < StandardError; end
 
-class Ghostwriter
+class Hackney
 
+  InstanceMethodDocs = [
+    "DEFINE A STEP: define_step(regex, &blk)",
+    "INVOKE A STEP: invoke_step(string)",
+    "CALL RSPEC FROM A STEP: expectation(blk)",
+    "RETURN FROM STEP: expectation_result(name, result_bool, actual_result)"
+  ]
   # start out by initializing Ghostwriter
   def initialize
     runtime = Cucumber::Runtime.new
@@ -14,6 +20,7 @@ class Ghostwriter
     language = Cucumber::RbSupport::RbLanguage.new(runtime, config)
     @dsl = Cucumber::RbSupport::RbDsl
     @dsl.rb_language = language
+    @instance_method_docs = InstanceMethodDocs
     @steps = {}
   end
 
