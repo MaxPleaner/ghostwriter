@@ -1,4 +1,4 @@
-## I'm keeping this repo for reference purposes but I probably wouldn't reach for this gem. Rather, take a look at [gemmy](http://github.com/gemmy) which basically has the same functionality in it's DynamicSteps feature.
+## I'm keeping this repo for reference purposes but I probably wouldn't reach for this gem. Rather, take a look at [gemmy](http://github.com/maxpleaner/gemmy) which basically has the same functionality in it's DynamicSteps feature.
 
 ## This project is probably a little overengineered
 
